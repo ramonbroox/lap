@@ -23,7 +23,7 @@ classifiers = [
 	"Operating System :: Unix",
 	"Operating System :: MacOS",
 ]
-dependencies = ["numpy"]
+dependencies = ["numpy<=1.99.9"]
 
 [project.optional-dependencies]
 dev = ["build", "wheel", "cython", "tox"]
