@@ -23,14 +23,14 @@ classifiers = [
 	"Operating System :: Unix",
 	"Operating System :: MacOS",
 ]
-dependencies = ["numpy<=1.99.9"]
+dependencies = ["numpy~=1.23.1"]
 
 [project.optional-dependencies]
 dev = ["build", "wheel", "cython", "tox"]
 test = ["pytest", "pytest-timeout"]
 
 [build-system]
-requires = ["setuptools", "numpy"]
+requires = ["setuptools", "numpy~=1.23.1"]
 build-backend = "setuptools.build_meta"
 
 [tool.pytest.ini_options]
