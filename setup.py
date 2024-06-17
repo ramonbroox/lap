@@ -30,6 +30,7 @@ import lap
 VERSION = lap.__version__
 
 NUMPY_MIN_VERSION = '1.10.1'
+NUMPY_MAX = '1.99.9'
 
 SETUPTOOLS_COMMANDS = set([
     'develop', 'release', 'bdist_egg', 'bdist_rpm',
@@ -46,6 +47,7 @@ if SETUPTOOLS_COMMANDS.intersection(sys.argv):
         extras_require={
             'alldeps': (
                 'numpy >= {0}'.format(NUMPY_MIN_VERSION),
+                'numph <= {0}'.format(NUMPY_MAX_VERSION),
             ),
         },
     )
